@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactanos</title>
+	<link rel="icon" type="image/x-icon" href="/src/images/favicon.ico">
+    <link rel="stylesheet" href="../CSS/Base.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+	<script src="../JavaScript/ControlAcceso.js"></script>
+    <script src="../JavaScript/Contactanos.js"></script>
+</head>
+<body>
+    <header>
+        <div id="Logo">
+                <img src="../Src/images/LogoBiblio.png" alt="">
+        </div>
+        <h1>BIBLIOTECA ONLINE CIENCIA Y SUDOR</h1>
+        <a id="Logout" class="button" href="../Index.html">Logout</a>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="Configuracion.html" class="button">Configuración</a></li>
+            <li><a href="Consultas.html" class="button">Consultas</a></li>
+            <li><a href="Operacion.html" class="button">Operación</a></li>
+            <li><a style="visibility: hidden;" href="Contactanos2.html" class="button">Contactanos</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1 class="titulo">Contactanos</h1>
+        <section id="Contactanos">
+            <article Class="imagen">
+                <img src="../src/images/img-contacto.png" alt="Contacto">
+            </article>
+            <article class="formulario">
+                <form id="FormContacto">
+                    <label for="Contacto_Nombre">Nombre</label>
+                    <input id="Contacto_Nombre" name="Contacto_Nombre" type="text">
+
+                    <p> Motivo de su contacto</p><p></p>
+                    <div class="alineadorRight">
+                        <input type="radio" id="Contacto_Motivo" name="Contacto_Motivo" value="Consulta" checked>
+                    </div>
+                    <label for="Contacto_Motivo">Consulta</label>
+                    <div class="alineadorRight">
+                        <input type="radio" id="Contacto_Queja" name="Contacto_Queja" value="Queja">
+                    </div>
+                    <label for="Contacto_Queja">Queja</label>
+
+                    <label for="Tipo_Usuario">Indicar tipo de usuario</label>
+                    <select name="Tipo_Usuario" id="Tipo_Usuario">
+                        <option value="Nulo">Seleccione tipo de usuario</option>
+                        <option value="Estudiante">Estudiante</option>
+                        <option value="Docente">Docente</option>
+                        <option value="Otro">Otro</option>
+                    </select>
+
+                    <label for="Contacto_Email">Email</label>
+                    <input id="Contacto_Email" name="Contacto_Email" type="email">
+                    <label for="Contacto_Mensaje">Mensaje</label>
+                    <textarea id="Contacto_Mensaje" name="Contacto_Mensaje" cols="30" rows="10"></textarea>
+
+                    <input class="button" type="reset" value="Borrar">
+                    <input class="button" type="submit" value="Confirmar">
+					
+                </form>
+            </article>
+        </section>
+        <p id="mensajeError"></p>
+          
+    </main>
+    <footer>
+    <p>Seguinos en nuestras Redes Sociales</p>
+
+        <a href="https://wa.me/5491138707485?text=Consulta:" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://www.facebook.com/BNMMArgentina/?locale=es_LA" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com/biblioteca_nacional_argentina/?hl=es" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.youtube.com/user/bibnal" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+
+    <p >Biblioteca Online Ciencia y Sudor 2024 - Todos los derechos reservados</p>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca</title>
+	<link rel="icon" type="image/x-icon" href="/src/images/favicon.ico">
+    <link rel="stylesheet" href="CSS/Base.css">
+	<link rel="stylesheet" href="CSS/Modal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div id="Logo">
+            <a href="#Inicio">
+                <img src="Src/images/LogoBiblio.png" alt="">
+            </a>
+        </div>
+        <h1>BIBLIOTECA ONLINE CIENCIA Y SUDOR</h1>
+		<input id="btnLogin" class="button" type="button" value="Login">
+   </header>
+    <main>
+        <h2 class="titulo">Quienes Somos</h2>
+        <section>
+			<br>
+		    <p>¡Bienvenidos a la Biblioteca Ciencia y Sudor!
+                <br>
+                <br>
+                En Biblioteca Ciencia y Sudor, nos apasiona fomentar el amor por la lectura y hacer que los libros 
+                estén al alcance de todos. Desde nuestro modesto inicio como una pequeña iniciativa local hasta 
+                convertirnos en una biblioteca en línea líder en el alquiler de libros físicos, nuestra misión siempre
+                 ha sido la misma: hacer que la magia de los libros esté disponible para cada persona, sin importar 
+                 su ubicación o recursos.
+                </p>
+			<br>
+        </section >
+		<div class="row">
+		<div class="column">
+        <h2 class="titulo">Nuestra Misión</h2>
+        <section>
+			<br>
+		    <p>En Biblioteca Ciencia y Sudor, nos esforzamos por:
+                <br>
+                Facilitar el acceso a una amplia variedad de libros físicos para lectores de todas las edades y gustos.
+                Fomentar la lectura como una actividad placentera y enriquecedora.
+                Promover la circulación de libros y el intercambio cultural entre comunidades.
+              
+            </p>
+			<br>
+        </section>
+        <h2 class="titulo">Nuestro Compromiso</h2>
+        <section>
+			<br>
+		    <p>Detrás de cada alquiler de libros y cada consulta de nuestros lectores, hay un equipo dedicado de 
+                bibliotecarios, logísticos y apasionados del mundo literario que trabajan incansablemente para 
+                hacer realidad nuestra visión. Nos enorgullece ofrecer un servicio personalizado a cada uno de 
+                nuestros usuarios.
+           </p>
+			<br>
+        </section >
+		</div>
+		<div class="column">
+        <section>
+		    <div class="row">
+			    <div class="column">
+		            <iframe width="504" height="356" src="carousel.html" title="carousel"></iframe>
+		        </div>
+		    </div>
+        </section>
+		</div>
+		</div>
+        <section>
+		    <div class="row">
+			    <div class="column">
+                    <h2 class="titulo">Donde estamos</h2>
+			        <iframe height="300" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.7795682394803!2d-58.40060402524783!3d-34.58444375647886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca9ef8c792ff%3A0x7cc6d5125f3e2685!2sBiblioteca%20Nacional%20Mariano%20Moreno!5e0!3m2!1sen!2sar!4v1714623384635!5m2!1sen!2sar" style="width:100%; border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		        </div>
+			    <div class="column">
+                    <h2 class="titulo">Como hablamos</h2>
+		            <iframe height="300" src="https://www.youtube.com/embed/-y5JbMDq9Vo?si=8pixj4yqCaGCQd03" title="YouTube video player"  style="width:100%; border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+		        </div>
+		    </div>
+        </section>
+		
+    </main>
+    <footer>
+    <p>Seguinos en nuestras Redes Sociales</p>
+
+        <a href="https://wa.me/5491138707485?text=Consulta:" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://www.facebook.com/BNMMArgentina/?locale=es_LA" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com/biblioteca_nacional_argentina/?hl=es" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.youtube.com/user/bibnal" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+
+    <p >Biblioteca Online Ciencia y Sudor 2024 - Todos los derechos reservados</p>
+    </footer>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+	    <article class="formulario"><br>
+			<form id="FormLogin">
+	
+				<label for="Usuario_Id">Código de Usuario</label>
+				<input id="Usuario_Id" name="Usuario_Id" type="text">
+			
+				<label for="Usuario_Password">Password</label>
+				<input id="Usuario_Password" name="Usuario_Password" type="password">
+				<span>&nbsp;</span>
+				<input id="btnIngresar" class="button" type="button" value="Ingresar">
+	
+			</form>
+			<p id="mensajeErrorUsuario" style="text-align: center;font-weight: bold;color: red;"></p>
+		</article>
+  </div>
+</div>
+<script src="JavaScript/Base.js"></script>
+<script src="JavaScript/Login.js"></script>
+</body>
+</html>
+
+  

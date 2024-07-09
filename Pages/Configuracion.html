@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuración</title>
+	<link rel="icon" type="image/x-icon" href="/src/images/favicon.ico">
+    <link rel="stylesheet" href="../CSS/Base.css">
+    <link rel="stylesheet" href="../CSS/ConfigOperConsulta.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+	<script src="../JavaScript/ControlAcceso.js"></script>
+    <script src="../JavaScript/Base.js"></script>
+</head>
+<body>
+    <header>
+        <div id="Logo">
+                <img src="../Src/images/LogoBiblio.png" alt="" >
+        </div>
+        <h1>BIBLIOTECA ONLINE CIENCIA Y SUDOR</h1>
+        <a id="Logout" class="button" href="../Index.html">Logout</a>
+    </header>
+    <nav>
+        <ul>
+            <li><a style="visibility: hidden;" href="Configuracion.html" class="button">Configuración</a></li>
+            <li><a href="Consultas.html" class="button">Consultas</a></li>
+            <li><a href="Operacion.html" class="button">Operación</a></li>
+            <li><a href="Contactanos2.html" class="button">Contactanos</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1 class="titulo">Configuración: Mantenimiento de Usuarios y Catálogo</h1>
+        <div class="row">
+	        <div class="columnBorder">
+                <section id="Usuarios">
+				    <h3 style="text-align:center;">Usuarios</h3>
+				    <article>
+                        <div class="row">
+	                        <div class="columnBorder">
+							    Código
+					        </div>
+	                        <div class="columnBorder">
+							    Nombre y Apellido
+					        </div>
+	                        <div class="columnBorder">
+							    Contacto
+					        </div>
+                        </div> 
+					</article>
+                    <article class="formulario"><br>
+						<h3 style="text-align:center;">Actualización de Usuarios</h3>
+						    <div class="row">
+							<div class="column">
+						    <input type="radio" id="add_U" name="user_action" value="add_U">
+                            <label for="add_U">Alta</label>
+							</div>
+							<div class="column">
+                            <input type="radio" id="del_U" name="user_action" value="del_U">
+                            <label for="del_U">Baja</label>
+							</div>
+							<div class="column">
+                            <input type="radio" id="upd_U" name="user_action" value="upd_U">
+                            <label for="upd_U">Modificación</label>
+							</div>
+							</div>
+                        <form id="FormUsuarios" style="opacity: 0.3;">
+
+                            <label for="Usuario_Id">Código de Usuario</label>
+                            <input id="Usuario_Id" name="Usuario_Id" type="text">
+		        
+                            <label for="Usuario_NomApe">Nombre y Apellido</label>
+                            <input id="Usuario_NomApe" name="Usuario_NomApe" type="text">
+		        
+                            <label for="Usuario_Direccion">Dirección</label>
+                            <input id="Usuario_Direccion" name="Usuario_Direccion" type="text">
+		        
+                            <label for="Usuario_Contacto">Contacto</label>
+                            <input id="Usuario_Contacto" name="Usuario_Contacto" type="text">
+		        
+                            <input id="btnBorraUser" class="button" type="button"  value="Borrar">
+                            <input id="btnConfirmaUser" class="button" type="button" value="Confirmar">
+
+                        </form>
+                    </article>
+                </section>
+                <p id="mensajeErrorUsuario"></p>
+		    </div>
+			<div class="columnBorder">
+                <section id="Libros">
+				    <h3 style="text-align:center;">Libros</h3>
+				    <article>
+                        <div class="row">
+	                        <div class="columnBorder">
+							    Código
+					        </div>
+	                        <div class="columnBorder">
+							    Título
+					        </div>
+	                        <div class="columnBorder">
+							    Ubicación
+					        </div>
+                        </div> 
+					</article>
+                    <article class="formulario"><br>
+						<h3 style="text-align:center;">Actualización de Libros</h3>
+						    <div class="row">
+							<div class="column">
+						    <input type="radio" id="add_B" name="book_action" value="add_B">
+                            <label for="add_B">Alta</label>
+							</div>
+							<div class="column">
+                            <input type="radio" id="del_B" name="book_action" value="del_B">
+                            <label for="del_B">Baja</label>
+							</div>
+							<div class="column">
+                            <input type="radio" id="upd_B" name="book_action" value="upd_B">
+                            <label for="upd_B">Modificación</label>
+							</div>
+							</div>
+                        <form id="FormLibros" style="opacity: 0.3">
+                            <label for="Libro_Id">Código de Libro</label>
+                            <input id="Libro_Id" name="Libro_Id" type="text">
+		        
+                            <label for="Libro_Titulo">Título del Libro</label>
+                            <input id="Libro_Titulo" name="Libro_Titulo" type="text">
+		        
+                            <label for="Libro_Autor">Autor</label>
+                            <input id="Libro_Autor" name="Libro_Autor" type="text">
+		        
+                            <label for="Libro_Ubicacion">Ubicación en la Bilioteca</label>
+                            <input id="Libro_Ubicacion" name="Libro_Ubicacion" type="text">
+		        
+                            <input id="btnBorraBook" class="button" type="button"  value="Borrar">
+                            <input id="btnConfirmaBook" class="button" type="button" value="Confirmar">
+                        </form>
+                    </article>
+                </section>
+                <p id="mensajeErrorLibro"></p>          
+		    </div>
+		</div>
+    </main>
+    <footer>
+    <p>Seguinos en nuestras Redes Sociales</p>
+
+        <a href="https://wa.me/5491138707485?text=Consulta:" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://www.facebook.com/BNMMArgentina/?locale=es_LA" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com/biblioteca_nacional_argentina/?hl=es" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.youtube.com/user/bibnal" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+
+    <p >Biblioteca Online Ciencia y Sudor 2024 - Todos los derechos reservados</p>
+    </footer>
+    <script src="../JavaScript/Configuracion.js"></script>
+    <script>
+      if (document.hasFocus()) {
+        getDatos("books.db", "libros");
+        getDatos("users.db", "usuarios");
+        listSection("Usuarios");
+        listSection("Libros");
+	  }
+	</script>	
+</body>
+</html>

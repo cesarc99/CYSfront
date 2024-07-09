@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operación</title>
+	<link rel="icon" type="image/x-icon" href="/src/images/favicon.ico">
+    <link rel="stylesheet" href="../CSS/Base.css">
+	<link rel="stylesheet" href="../CSS/ConfigOperConsulta.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+	<script src="../JavaScript/ControlAcceso.js"></script>
+    <script src="../JavaScript/Base.js"></script>
+</head>
+<body>
+    <header>
+        <div id="Logo">
+                <img src="../Src/images/LogoBiblio.png" alt="">
+        </div>
+        <h1>BIBLIOTECA ONLINE CIENCIA Y SUDOR</h1>
+        <a id="Logout" class="button" href="../Index.html">Logout</a>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="Configuracion.html" class="button">Configuración</a></li>
+            <li><a href="Consultas.html" class="button">Consultas</a></li>
+            <li><a style="visibility: hidden;" href="Operacion.html" class="button">Operación</a></li>
+            <li><a href="Contactanos2.html" class="button">Contactanos</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1 class="titulo">Operación: Reservas y Devoluciones</h1>
+        <div class="row">
+	        <div class="column">
+                <section id="Libros_Prestamo">
+				    <h3 style="text-align:center;">Disponibles para Préstamo</h3>
+				    <article>
+                        <div class="row">
+	                        <div class="columnBorder">
+							    Código
+					        </div>
+	                        <div class="columnBorder">
+							    Título
+					        </div>
+	                        <div class="columnBorder">
+							    Ubicación
+					        </div>
+	                        <div class="columnBorder">
+							    Prestar
+					        </div>
+                        </div> 
+					</article>
+                </section>
+                <p id="mensajeErrorPrestamo" style="padding-top: 1em;"></p>
+		    </div>
+			<div class="column">
+                <section id="Libros_Devolucion">
+				    <h3 style="text-align:center;">Prestados para Devolución</h3>
+				    <article>
+                        <div class="row">
+	                        <div class="columnBorder">
+							    Código
+					        </div>
+	                        <div class="columnBorder">
+							    Título
+					        </div>
+	                        <div class="columnBorder">
+							    Ubicación
+					        </div>
+	                        <div class="columnBorder">
+							    Devolver
+					        </div>
+                        </div> 
+					</article>
+                </section>
+                <p id="mensajeErrorDevolucion" style="padding-top: 1em;"></p>          
+		    </div>
+		</div>
+    </main>
+    <footer>
+    <p>Seguinos en nuestras Redes Sociales</p>
+
+        <a href="https://wa.me/5491138707485?text=Consulta:" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://www.facebook.com/BNMMArgentina/?locale=es_LA" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com/biblioteca_nacional_argentina/?hl=es" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.youtube.com/user/bibnal" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+
+    <p >Biblioteca Online Ciencia y Sudor 2024 - Todos los derechos reservados</p>
+    </footer>
+    <script src="../JavaScript/Operacion.js"></script>
+    <script>
+      if (document.hasFocus()) {
+	    getDatos("books.db", "libros");
+        listSection("Libros_Prestamo");
+        listSection("Libros_Devolucion");
+	  }
+	</script>	
+</body>
+</html>
